@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="QuizzMat/QuizzMat.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="QuizzMatApi/QuizzMatApi.csproj" />
+  <Project Path="QuizzMatLib/QuizzMatLib.csproj" />
+</Solution>

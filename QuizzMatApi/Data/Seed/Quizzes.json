@@ -1,0 +1,89 @@
+﻿{
+  "quizzes": [
+    {
+      "title": "Основы C#",
+      "description": "Базовые вопросы по языку C#",
+      "imageUrl": null,
+      "reward": "Новичок C#",
+      "status": "Published",
+      "questions": [
+        {
+          "title": "Типы данных",
+          "text": "Какой тип в C# является ссылочным?",
+          "type": "SingleChoice",
+          "points": 1,
+          "options": [
+            {
+              "text": "int",
+              "isCorrect": false
+            },
+            {
+              "text": "string",
+              "isCorrect": true
+            },
+            {
+              "text": "double",
+              "isCorrect": false
+            },
+            {
+              "text": "bool",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "title": "Множественный выбор",
+          "text": "Какие из перечисленных — значимые типы?",
+          "type": "MultipleChoice",
+          "points": 2,
+          "options": [
+            {
+              "text": "int",
+              "isCorrect": true
+            },
+            {
+              "text": "string",
+              "isCorrect": false
+            },
+            {
+              "text": "decimal",
+              "isCorrect": true
+            },
+            {
+              "text": "object",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Основы EF Core",
+      "description": "Проверь знания по Entity Framework Core",
+      "reward": "Знаток EF",
+      "status": "Published",
+      "questions": [
+        {
+          "title": "Миграции",
+          "text": "Какая команда создаёт миграцию?",
+          "type": "SingleChoice",
+          "points": 1,
+          "options": [
+            {
+              "text": "dotnet ef migrations add",
+              "isCorrect": true
+            },
+            {
+              "text": "dotnet ef database update",
+              "isCorrect": false
+            },
+            {
+              "text": "dotnet build",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
