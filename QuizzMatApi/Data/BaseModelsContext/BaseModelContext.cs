@@ -4,9 +4,9 @@ using QuizzMatApi.Data.Seed;
 
 namespace QuizzMatApi.Data.BaseModelsContext
 {
-    public class BaseModelsContext : DbContext
+    public class BaseModelContext : DbContext
     {
-        public BaseModelsContext(DbContextOptions<BaseModelsContext> options) : base(options)
+        public BaseModelContext(DbContextOptions<BaseModelContext> options) : base(options)
         {
         }
 
@@ -22,7 +22,7 @@ namespace QuizzMatApi.Data.BaseModelsContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BaseModelsContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BaseModelContext).Assembly);
 
             modelBuilder.Entity<Achievement>().HasData(AchievementSeed.GetData());
         }
